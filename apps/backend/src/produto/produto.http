@@ -1,0 +1,39 @@
+GET http://localhost:4000/produtos
+
+###
+GET http://localhost:4000/produtos/8
+
+###
+DELETE http://localhost:4000/produtos/19
+
+###
+POST http://localhost:4000/produtos
+Content-Type: application/json
+
+{
+    "nome": "Nintendo Switch OLED",
+    "descricao": "Console de videogame",
+    "marca": "Nintendo",
+    "modelo": "Switch OLED",
+    "imagem": "https://www.nintendo.com/content/dam/noa/en_US/hardware/nintendo_switch/nintendo_switch_oled_model/nintendo-switch-oled-model-white-set-v2.jpg",
+    "nota": 4.5,
+    "videoReview": "https://www.youtube.com/watch?v=5d1ZlZGqfjA",
+    "tags": ["videogame", "console", "nintendo"],
+    "precoBase": 2999.99,
+    "precoPromocional": 2499.99,
+    "menorPreco": 1999.99,
+    "maiorPreco": 3499.99,
+    "precoMedio": 2799.99,
+    "especificacoes": {
+        "destaque": "Tela OLED",
+        "Cor": "branco",
+        "Tamanho": "7 polegadas",
+        "Resolucao": "720p",
+        "Armazenamento": "64GB",
+        "Conectividade": "Wi-Fi, Bluetooth",
+        "Bateria": "4310mAh",
+        "Processador": "NVIDIA Custom Tegra processor",
+        "Memória": "4GB RAM",
+        "Aúdio": "Alto-falantes estéreo"
+    }
+}
